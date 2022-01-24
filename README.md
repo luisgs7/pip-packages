@@ -1,4 +1,4 @@
-# Pip package install action
+# Pip package install action and python project dependencies 
 
 A github action that makes it possible to install pip, and install the dependencies described in the requirements.txt file
 
