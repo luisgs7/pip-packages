@@ -1,0 +1,17 @@
+name: "pip package installer"
+description: "Install packages using pip from a requirements.txt file"
+
+inputs:
+  requirements:
+    description: "File requirements"
+    required: false
+    default: requirements.txt
+
+runs:
+  using: composite
+  steps:
+    - name: Install pip and packages
+      shell: bash
+      run: |
+        python -m pip install --upgrade pip 
+        python -m pip install -r ${{ inputs.requirements }}
