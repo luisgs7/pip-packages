@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install pip and packages
-        uses: luisgs7/luisgs7/pip-packages@v{version}
+        uses: luisgs7/pip-packages@v{version}
 ```
 
 ## Inputs
